@@ -8,7 +8,9 @@ plugins {
 android {
     namespace = "com.example.note_assignment"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    
+    // Let AGP handle the NDK version automatically
+    // NDK version will be determined by the Android Gradle Plugin
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -24,7 +26,7 @@ android {
         applicationId = "com.example.note_assignment"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
-        minSdk = flutter.minSdkVersion
+        minSdk = 23
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
